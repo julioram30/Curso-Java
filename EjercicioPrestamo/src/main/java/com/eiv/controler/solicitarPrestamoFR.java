@@ -25,10 +25,9 @@ public class solicitarPrestamoFR implements SolicitarPrestamo {
     }
 
 
-
     @Override
     public List<Prestamo> solicitar(BigDecimal capital, Float tasa, Long cuotas) {
-        // TODO Auto-generated method stub
+        
         
         return null;
     }
