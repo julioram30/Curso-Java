@@ -1,6 +1,7 @@
 package com.eiv.controler;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.math3.analysis.function.Pow;
@@ -15,7 +16,7 @@ public class solicitarPrestamoFR implements SolicitarPrestamo {
     private Float razon = null;
     private Double vp = null;
 
-    List<Prestamo> desarrollo;
+    List<Prestamo> desarrollo = new ArrayList<>();
 
     public solicitarPrestamoFR() {
         super();
