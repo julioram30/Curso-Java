@@ -3,7 +3,7 @@ package com.eiv.controler;
 import java.math.BigDecimal;
 import java.util.List;
 
-import com.eiv.entidad.Prestamo;
+import com.eiv.entidad.Cuota;
 
 public class solicitarPrestamoAL implements SolicitarPrestamo {
    
@@ -11,8 +11,9 @@ public class solicitarPrestamoAL implements SolicitarPrestamo {
     private Float tasa;
     private Long cuotas;
     
+    
     @Override
-    public List<Prestamo> solicitar(BigDecimal capital, Float tasa, Long cuotas) {
+    public List<Cuota> solicitar(BigDecimal capital, BigDecimal tasa, Long cuotas) {
         // TODO Auto-generated method stub
         return null;
     }

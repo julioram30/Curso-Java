@@ -6,23 +6,23 @@ import java.util.List;
 
 import org.apache.commons.math3.analysis.function.Pow;
 
-import com.eiv.entidad.Prestamo;
+import com.eiv.entidad.Cuota;
 
 public class solicitarPrestamoFR implements SolicitarPrestamo {
 
     private BigDecimal capital = null;
-    private Float tasa = null;
+    private BigDecimal tasa = null;
     private Long cuotas = null;
-    private Float razon = null;
+    private BigDecimal razon = null;
     private Double vp = null;
 
-    List<Prestamo> desarrollo = new ArrayList<>();
+    List<Cuota> desarrollo = new ArrayList<>();
 
     public solicitarPrestamoFR() {
         super();
     }
 
-    public solicitarPrestamoFR(BigDecimal capital, Float tasa, Long cuotas) {
+    public solicitarPrestamoFR(BigDecimal capital, BigDecimal tasa, Long cuotas) {
         super();
         this.capital = capital;
         this.tasa = tasa;
@@ -31,7 +31,7 @@ public class solicitarPrestamoFR implements SolicitarPrestamo {
     }
 
     @Override
-    public List<Prestamo> solicitar(BigDecimal capital, Float tasa, Long cuotas) {
+    public List<Cuota> solicitar(BigDecimal capital, BigDecimal tasa, Long cuotas) {
         System.out.println("metodo de calculo");
 
         Pow potencia = new Pow();

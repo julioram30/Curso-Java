@@ -2,20 +2,20 @@ package com.eiv.entidad;
 
 import java.math.BigDecimal;
 
-public class Prestamo {
+public class Cuota {
 
-    private int Cuota;
+    private int cuota;
     private BigDecimal VC;
     private BigDecimal Interes;
     private BigDecimal Capital;
     private BigDecimal Saldo;
 
     public int getCuota() {
-        return Cuota;
+        return cuota;
     }
 
     public void setCuota(int cuota) {
-        Cuota = cuota;
+        this.cuota = cuota;
     }
 
     public BigDecimal getVC() {
@@ -55,7 +55,7 @@ public class Prestamo {
         final int prime = 31;
         int result = 1;
         result = prime * result + ((Capital == null) ? 0 : Capital.hashCode());
-        result = prime * result + Cuota;
+        result = prime * result + cuota;
         result = prime * result + ((Interes == null) ? 0 : Interes.hashCode());
         result = prime * result + ((Saldo == null) ? 0 : Saldo.hashCode());
         result = prime * result + ((VC == null) ? 0 : VC.hashCode());
@@ -70,13 +70,13 @@ public class Prestamo {
             return false;
         if (getClass() != obj.getClass())
             return false;
-        Prestamo other = (Prestamo) obj;
+        Cuota other = (Cuota) obj;
         if (Capital == null) {
             if (other.Capital != null)
                 return false;
         } else if (!Capital.equals(other.Capital))
             return false;
-        if (Cuota != other.Cuota)
+        if (cuota != other.cuota)
             return false;
         if (Interes == null) {
             if (other.Interes != null)

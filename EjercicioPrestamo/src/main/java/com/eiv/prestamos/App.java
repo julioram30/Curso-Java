@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import com.eiv.controler.solicitarPrestamoFR;
-import com.eiv.entidad.Prestamo;
+import com.eiv.entidad.Cuota;
 
 public class App {
 
@@ -43,7 +43,7 @@ public class App {
 }
         if (tipo == 1) {
             solicitarPrestamoFR prestamoFr = new solicitarPrestamoFR();
-            List<Prestamo> desarrollo = prestamoFr.solicitar(capital, tasa, cuotas);
+            List<Cuota> desarrollo = prestamoFr.solicitar(capital, tasa, cuotas);
 
         } else {
             System.out.println("No Implementado");
