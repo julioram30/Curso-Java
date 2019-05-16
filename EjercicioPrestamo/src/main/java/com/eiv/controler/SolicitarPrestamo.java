@@ -7,7 +7,7 @@ import com.eiv.entidad.Cuota;
 
 public interface SolicitarPrestamo {
    
-    public List<Cuota> solicitar(BigDecimal capital,BigDecimal tasa,Long cuotas);
+    public List<Cuota> solicitar(BigDecimal capital,BigDecimal tasa,int  cuotas);
     
 
 }
