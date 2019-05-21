@@ -6,8 +6,7 @@ import java.util.List;
 import com.eiv.entidad.Cuota;
 
 public interface SolicitarPrestamo {
-   
-    public List<Cuota> solicitar(BigDecimal capital,BigDecimal tasa,int  cuotas);
-    
+
+    public List<Cuota> solicitar(BigDecimal capital, BigDecimal tasa, int cuotas);
 
 }

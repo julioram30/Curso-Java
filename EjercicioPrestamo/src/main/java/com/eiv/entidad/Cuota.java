@@ -5,10 +5,10 @@ import java.math.BigDecimal;
 public class Cuota {
 
     private int cuota;
-    private BigDecimal VC;
-    private BigDecimal Interes;
-    private BigDecimal Capital;
-    private BigDecimal Saldo;
+    private BigDecimal vc;
+    private BigDecimal interes;
+    private BigDecimal capital;
+    private BigDecimal saldo;
 
     public int getCuota() {
         return cuota;
@@ -19,46 +19,57 @@ public class Cuota {
     }
 
     public BigDecimal getVC() {
-        return VC;
+        return vc;
     }
 
     public void setVC(BigDecimal vC) {
-        VC = vC;
+        vc = vC;
     }
 
     public BigDecimal getInteres() {
-        return Interes;
+        return interes;
     }
 
     public void setInteres(BigDecimal interes) {
-        Interes = interes;
+        this.interes = interes;
     }
 
     public BigDecimal getCapital() {
-        return Capital;
+        return capital;
     }
 
     public void setCapital(BigDecimal capital) {
-        Capital = capital;
+        this.capital = capital;
     }
 
     public BigDecimal getSaldo() {
-        return Saldo;
+        return saldo;
     }
 
     public void setSaldo(BigDecimal saldo) {
-        Saldo = saldo;
+        this.saldo = saldo;
+    }
+    
+    public Cuota() {}
+    
+    public Cuota(BigDecimal capital,BigDecimal interes, int cuota,BigDecimal vc, BigDecimal saldo ) {
+        super();
+        this.capital=capital;
+        this.interes=interes;
+        this.cuota=cuota;
+        this.vc=vc;
+        this.saldo=saldo;
     }
 
     @Override
     public int hashCode() {
         final int prime = 31;
         int result = 1;
-        result = prime * result + ((Capital == null) ? 0 : Capital.hashCode());
+        result = prime * result + ((capital == null) ? 0 : capital.hashCode());
         result = prime * result + cuota;
-        result = prime * result + ((Interes == null) ? 0 : Interes.hashCode());
-        result = prime * result + ((Saldo == null) ? 0 : Saldo.hashCode());
-        result = prime * result + ((VC == null) ? 0 : VC.hashCode());
+        result = prime * result + ((interes == null) ? 0 : interes.hashCode());
+        result = prime * result + ((saldo == null) ? 0 : saldo.hashCode());
+        result = prime * result + ((vc == null) ? 0 : vc.hashCode());
         return result;
     }
 
@@ -71,27 +82,27 @@ public class Cuota {
         if (getClass() != obj.getClass())
             return false;
         Cuota other = (Cuota) obj;
-        if (Capital == null) {
-            if (other.Capital != null)
+        if (capital == null) {
+            if (other.capital != null)
                 return false;
-        } else if (!Capital.equals(other.Capital))
+        } else if (!capital.equals(other.capital))
             return false;
         if (cuota != other.cuota)
             return false;
-        if (Interes == null) {
-            if (other.Interes != null)
+        if (interes == null) {
+            if (other.interes != null)
                 return false;
-        } else if (!Interes.equals(other.Interes))
+        } else if (!interes.equals(other.interes))
             return false;
-        if (Saldo == null) {
-            if (other.Saldo != null)
+        if (saldo == null) {
+            if (other.saldo != null)
                 return false;
-        } else if (!Saldo.equals(other.Saldo))
+        } else if (!saldo.equals(other.saldo))
             return false;
-        if (VC == null) {
-            if (other.VC != null)
+        if (vc == null) {
+            if (other.vc != null)
                 return false;
-        } else if (!VC.equals(other.VC))
+        } else if (!vc.equals(other.vc))
             return false;
         return true;
     }
