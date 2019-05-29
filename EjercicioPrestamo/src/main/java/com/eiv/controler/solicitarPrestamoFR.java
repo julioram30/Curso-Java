@@ -32,7 +32,7 @@ public class solicitarPrestamoFR implements SolicitarPrestamo {
     public List<Cuota> solicitar(BigDecimal capital, BigDecimal tasa, int cuotas) {
 
         System.out.println("metodo de calculo");
-        
+       
         BigDecimal razon = tasa.divide(DIASANIO.multiply(modulo.divide(porcentaje))); // calculo principal
         Double exponente = Double.valueOf(cuotas);
 

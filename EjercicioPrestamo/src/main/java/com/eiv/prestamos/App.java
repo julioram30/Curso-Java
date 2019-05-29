@@ -50,6 +50,9 @@ public class App {
         if (tipo == 1) {
             solicitarPrestamoFR prestamoFr = new solicitarPrestamoFR();
             List<Cuota> desarrollo = prestamoFr.solicitar(capital, tasa, cuotas);
+            for (Cuota cuota : desarrollo) {
+                System.out.println(cuota.getSaldo().toString());
+            }
 
         } else {
             System.out.println("No Implementado");
