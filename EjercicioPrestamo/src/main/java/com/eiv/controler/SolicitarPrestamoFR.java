@@ -8,21 +8,21 @@ import org.apache.commons.math3.analysis.function.Pow;
 
 import com.eiv.entidad.Cuota;
 
-public class solicitarPrestamoFR implements SolicitarPrestamo {
+public class SolicitarPrestamoFR implements SolicitarPrestamo {
 
     private final static  BigDecimal DIASANIO = new BigDecimal("365");
     private final static BigDecimal modulo = new BigDecimal("30");
     private final static BigDecimal porcentaje = new BigDecimal("100");
     
- 
+    
 
     List<Cuota> desarrollo = new ArrayList<>();
 
-    public solicitarPrestamoFR() {
+    public SolicitarPrestamoFR() {
         super();
     }
 
-    public solicitarPrestamoFR(BigDecimal capital, BigDecimal tasa, int cuotas) {
+    public SolicitarPrestamoFR(BigDecimal capital, BigDecimal tasa, int cuotas) {
         super();
        
         // metodo solo para mostrar el polimorfismo

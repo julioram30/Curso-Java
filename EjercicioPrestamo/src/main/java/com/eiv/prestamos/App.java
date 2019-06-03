@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.util.List;
 import java.util.Scanner;
 
-import com.eiv.controler.solicitarPrestamoFR;
+import com.eiv.controler.SolicitarPrestamoFR;
 import com.eiv.entidad.Cuota;
 
 public class App {
@@ -48,7 +48,7 @@ public class App {
 
         }
         if (tipo == 1) {
-            solicitarPrestamoFR prestamoFr = new solicitarPrestamoFR();
+            SolicitarPrestamoFR prestamoFr = new SolicitarPrestamoFR();
             List<Cuota> desarrollo = prestamoFr.solicitar(capital, tasa, cuotas);
             for (Cuota cuota : desarrollo) {
                 System.out.println(cuota.getSaldo().toString());
